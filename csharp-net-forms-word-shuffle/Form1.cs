@@ -11,6 +11,7 @@ namespace csharp_net_forms_word_shuffle
         public GuessTheWord()
         {
             InitializeComponent();
+            Setup();
         }
 
 
@@ -35,7 +36,7 @@ namespace csharp_net_forms_word_shuffle
 
         private string Scramble(string text)
         {
-
+            return text;
         }
     }
 }

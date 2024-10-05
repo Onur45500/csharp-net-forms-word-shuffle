@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            label2 = new Label();
+            lblGuessed = new Label();
             lblWord = new Label();
             textBox1 = new TextBox();
             lblInfo = new Label();
@@ -47,14 +47,14 @@
             label1.Text = "Guess the word";
             label1.Click += label1_Click;
             // 
-            // label2
+            // lblGuessed
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(346, 331);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
+            lblGuessed.AutoSize = true;
+            lblGuessed.Location = new Point(346, 331);
+            lblGuessed.Name = "lblGuessed";
+            lblGuessed.Size = new Size(50, 20);
+            lblGuessed.TabIndex = 1;
+            lblGuessed.Text = "label2";
             // 
             // lblWord
             // 
@@ -91,10 +91,11 @@
             Controls.Add(lblInfo);
             Controls.Add(textBox1);
             Controls.Add(lblWord);
-            Controls.Add(label2);
+            Controls.Add(lblGuessed);
             Controls.Add(label1);
             Name = "GuessTheWord";
             Text = "Guess the word";
+            //KeyDown += KeyIsDown;
             KeyPress += KeyIsPressed;
             ResumeLayout(false);
             PerformLayout();
@@ -103,7 +104,7 @@
         #endregion
 
         private Label label1;
-        private Label label2;
+        private Label lblGuessed;
         private Label lblWord;
         private TextBox textBox1;
         private Label lblInfo;

@@ -36,7 +36,7 @@ namespace csharp_net_forms_word_shuffle
 
         private string Scramble(string text)
         {
-            return text;
+            return new string(text.ToCharArray().OrderBy(x => Guid.NewGuid()).ToArray());
         }
     }
 }
